@@ -216,7 +216,7 @@ class CoAtNet(nn.Module):
     is_CoATNet6_7 = False
 
     def __init__(self, image_size, in_channels, num_blocks, channels, num_classes=1000,
-                 block_types=['C', 'C', 'T', 'T'], distillation=True, **kwargs):
+                 block_types=['C', 'C', 'T', 'T'], distillation=False, **kwargs):
         super().__init__()
         ih, iw = image_size
         block = {'C': MBConv, 'T': Transformer}
