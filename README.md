@@ -1,4 +1,5 @@
-# CoATNet0-7_Pytorch
+# CoAtNet: Marrying Convolution and Attention for All Data Sizes
+https://arxiv.org/pdf/2106.04803v2.pdf
 
 ## Install Packages
 
