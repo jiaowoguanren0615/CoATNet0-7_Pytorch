@@ -284,7 +284,7 @@ class CoAtNet(nn.Module):
                 layers.append(block(oup, oup, image_size))
         return nn.Sequential(*layers)
 
-
+@register_model
 def coatnet_0(num_classes, **kwargs):
     num_blocks = [2, 2, 3, 5, 2]  # L
     channels = [64, 96, 192, 384, 768]  # D
